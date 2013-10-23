@@ -9,7 +9,14 @@ function to_console {
 
 to_console "Setting up virtualenv on venv"
 
-source bin/activate || (cd .. && virtualenv -p /usr/bin/python2.7 venv && cd venv && source bin/activate)
+
+cd ..
+to_console "creating virtual env on venv folder"
+virtualenv -p /usr/bin/python2.7 venv
+cd venv
+to_console "Activating virtualenv"
+source bin/activate
+
 
 to_console "Checking up dependencies"
 

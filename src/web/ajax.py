@@ -7,6 +7,6 @@ from user.model import User
 
 
 def save_user(_resp, name):
-    user = facade.save_user(name)
+    user = facade.save_user(name).execute().result
     js = json.dumps(user.to_dict())
     _resp.write(js)
