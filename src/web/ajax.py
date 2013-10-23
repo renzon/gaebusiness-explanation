@@ -8,6 +8,6 @@ from user.model import User
 def save_user(_resp, name):
     user = User(name=name)
     user.put()
-    logging.info("Svaing %s" % user)
+    logging.info("Saving %s" % user)
     js = json.dumps(user.to_dict())
     _resp.write(js)
