@@ -15,6 +15,7 @@ var
 sdist
 develop-eggs
 .installed.cfg
+.idea
 lib
 lib64
 __pycache__
@@ -34,3 +35,11 @@ nosetests.xml
 .mr.developer.cfg
 .project
 .pydevproject
+
+src/dist
+venv/bin
+venv/include
+venv/lib
+venv/local
+venv/.pip_download_cache
+src/lib
